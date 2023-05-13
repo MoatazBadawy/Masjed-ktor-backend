@@ -31,7 +31,7 @@ dependencies {
     // Ktorm "ORM"
     implementation "org.ktorm:ktorm-core:$ktorm_version"
     // Ktorm "ORM" with MySQL
-    implementation "mysql:mysql-connector-java:8.0.28"
+    implementation "mysql:mysql-connector-java:8.0.33"
     // HikariCP for Ktorm
     implementation "com.zaxxer:HikariCP:$hikaricp_version"
     // Koin for Ktor
