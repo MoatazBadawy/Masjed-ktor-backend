@@ -1,4 +1,4 @@
-package ktorbackend.masjed.moataz.com.data.di.utils
+package ktorbackend.masjed.moataz.com.di.utils
 
 object DatabaseConstant {
     const val MASJED_DATABASE_URL = "jdbc:mysql://localhost:3306/masjed"

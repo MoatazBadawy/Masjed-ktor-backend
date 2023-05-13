@@ -2,7 +2,7 @@ package ktorbackend.masjed.moataz.com.di
 
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
-import ktorbackend.masjed.moataz.com.data.di.utils.DatabaseConstant
+import ktorbackend.masjed.moataz.com.di.utils.DatabaseConstant
 import org.koin.dsl.module
 import org.ktorm.database.Database
 import org.ktorm.database.TransactionIsolation
