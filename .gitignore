@@ -34,3 +34,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+## DatabaseConstant class
+src/main/kotlin/ktorbackend/masjed/moataz/com/di/utils/DatabaseConstant.kt

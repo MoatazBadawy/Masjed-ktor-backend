@@ -16,9 +16,7 @@ val databaseModule = module {
             username = DatabaseConstant.MASJED_DATABASE_USER
             password = DatabaseConstant.MASJED_DATABASE_PASSWORD
             maximumPoolSize = 5 // the maximum number of connections in the pool
-            isAutoCommit = false // the default auto-commit behavior
             idleTimeout = TimeUnit.MINUTES.toMillis(10) // the maximum time a connection can sit idle in the pool
-            transactionIsolation = TransactionIsolation.REPEATABLE_READ.name // the default transaction isolation level
         }
         Database.connect(HikariDataSource(config))
     }
