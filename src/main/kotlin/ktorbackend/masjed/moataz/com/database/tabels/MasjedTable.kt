@@ -10,4 +10,7 @@ object MasjedTable : Table<MasjedEntity>("masjed") {
     val masjedName = varchar("masjed_name").bindTo { it.masjedName }
     val masjedDescription = varchar("masjed_description").bindTo { it.masjedDescription }
     val masjedImg = varchar("masjed_img").bindTo { it.masjedImg }
+    val masjedWorshipers = int("masjed_worshipers").bindTo { it.masjedWorshipers }
+    val masjedImams = int("masjed_imams").bindTo { it.masjedImams }
+    val masjedWorkers = int("masjed_workers").bindTo { it.masjedWorkers }
 }

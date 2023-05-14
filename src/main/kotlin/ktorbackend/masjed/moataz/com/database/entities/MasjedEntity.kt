@@ -9,4 +9,7 @@ interface MasjedEntity : Entity<MasjedEntity> {
     val masjedName: String
     val masjedDescription: String
     val masjedImg: String
+    val masjedWorshipers: Int
+    val masjedImams: Int
+    val masjedWorkers: Int
 }

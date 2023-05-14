@@ -12,5 +12,11 @@ data class Masjed(
     @SerialName("masjed_description")
     val masjedDescription: String,
     @SerialName("masjed_img")
-    val masjedImg: String
+    val masjedImg: String,
+    @SerialName("masjed_worshipers")
+    val masjedWorshipers: Int,
+    @SerialName("masjed_imams")
+    val masjedImams: Int,
+    @SerialName("masjed_workers")
+    val masjedWorkers: Int
 )

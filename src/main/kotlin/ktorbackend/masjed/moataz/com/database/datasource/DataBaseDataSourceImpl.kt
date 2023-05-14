@@ -1,11 +1,9 @@
 package ktorbackend.masjed.moataz.com.database.datasource
 
 import ktorbackend.masjed.moataz.com.database.Masjed
-import ktorbackend.masjed.moataz.com.database.MasjedDetails
-import ktorbackend.masjed.moataz.com.database.datasource.mapper.toMasjedDetails
+import ktorbackend.masjed.moataz.com.database.datasource.mapper.toMasjed
 import ktorbackend.masjed.moataz.com.database.datasource.mapper.toMasjeds
 import ktorbackend.masjed.moataz.com.database.datasource.models.Masjed
-import ktorbackend.masjed.moataz.com.database.datasource.models.MasjedDetails
 import org.ktorm.database.Database
 import org.ktorm.dsl.eq
 import org.ktorm.entity.find
@@ -20,9 +18,9 @@ class DataBaseDataSourceImpl(
         }.toMasjeds()
     }
 
-    override suspend fun getMasjedDetailsById(id: Int): MasjedDetails? {
-        return database.MasjedDetails.find { masjedDetailsTable ->
-            masjedDetailsTable.masjedDetailsId eq id
-        }?.toMasjedDetails()
+    override suspend fun getMasjedDetailsById(id: Int): Masjed? {
+        return database.Masjed.find { masjedTable ->
+            masjedTable.masjedId eq id
+        }?.toMasjed()
     }
 }

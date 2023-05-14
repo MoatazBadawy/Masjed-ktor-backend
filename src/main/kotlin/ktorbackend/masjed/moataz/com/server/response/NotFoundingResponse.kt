@@ -6,7 +6,7 @@ import io.ktor.server.response.*
 
 suspend fun ApplicationCall.notFoundResponse() {
     return respond(
-        status = HttpStatusCode.NoContent,
+        status = HttpStatusCode.NotFound,
         message = "No Masjeds Found"
     )
 }
