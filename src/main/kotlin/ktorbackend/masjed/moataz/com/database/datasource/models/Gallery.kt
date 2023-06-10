@@ -1,12 +1,12 @@
 package ktorbackend.masjed.moataz.com.database.datasource.models
 
-import kotlinx.serialization.SerialName
+import com.fasterxml.jackson.annotation.JsonIgnore
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Masjed(
+data class Gallery(
     val id: Int,
-    val name: String,
-    val description: String,
+    @JsonIgnore
+    val masjedId: Int,
     val imgUrl: String,
 )
