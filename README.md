@@ -1,5 +1,6 @@
 # Masjed-ktor-backend
 
+This is a simple backend application for Masjed project. It is built with Kotlin and Ktor, it also uses Ktorm as ORM. This application is built to be used with [Masjed-Jetpack-Compose](https://github.com/MoatazBadawy/Masjed-jetpack-compose). 
 # How it works
 
 The application was built with:
