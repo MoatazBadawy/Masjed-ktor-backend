@@ -56,13 +56,11 @@ fun MasjedDetailsEntity.toMasjedDetails(gallery: List<Gallery>): MasjedDetails {
  * Map GalleryEntity to Gallery
  */
 fun List<GalleryEntity>.toGalleries(): List<Gallery> {
-    return map { it.toGallery() }
-}
-
-fun GalleryEntity.toGallery(): Gallery {
-    return Gallery(
-        id = id,
-        masjedId = masjedId,
-        imgUrl = imgUrl
-    )
+    return mapIndexed { index, entity ->
+        Gallery(
+            id = index + 1,
+            masjedId = entity.masjedId,
+            imgUrl = entity.imgUrl
+        )
+    }
 }
